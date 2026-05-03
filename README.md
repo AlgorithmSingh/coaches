@@ -2,7 +2,12 @@
 
 Reusable coach prompts for triaging information and reviewing agent output. Each file is a self-contained prompt — paste into a fresh Claude (or any capable LLM) chat.
 
-Source conversation: [`../daily/2026-04-18/learning-and-review-coach-prompts.md`](../daily/2026-04-18/learning-and-review-coach-prompts.md).
+Source conversation: [`../../daily-journal/2026-04-18/learning-and-review-coach-prompts.md`](../../daily-journal/2026-04-18/learning-and-review-coach-prompts.md).
+
+## Folder docs
+
+- [`AGENTS.md`](./AGENTS.md) — scoped instructions for coding agents working in this folder.
+- [`KNOWLEDGE_BASE.md`](./KNOWLEDGE_BASE.md) — living snapshot of the coach library and how the prompts fit together.
 
 ## The two families
 
@@ -14,6 +19,7 @@ Source conversation: [`../daily/2026-04-18/learning-and-review-coach-prompts.md`
 | [`triage-coach.md`](./triage-coach.md) | Just need to cut noise fast. Compression + delta only. |
 | [`feynman-coach.md`](./feynman-coach.md) | Want to find holes in my own understanding. I explain, it finds gaps. |
 | [`socratic-coach.md`](./socratic-coach.md) | Want to understand one concept deeply. It drills via questions. |
+| [`watch-coach.md`](./watch-coach.md) | Have a video transcript from `watch-agent-system`. Same four techniques as `learning-coach`, framed for video material. |
 
 **Review coaches** are for reviewing agent output before green-lighting it.
 
@@ -51,6 +57,9 @@ Match the situation to the coach, not the other way around.
 
 **"Agent wrote dense code. I can't hold it in my head."**
 → [`code-explainer.md`](./code-explainer.md). Four phases: orient → mechanics → decisions → risks. Tell it upfront whether I need to *approve*, *maintain*, or *modify* — it calibrates depth.
+
+**"`watch-agent-system` gave me a video transcript and I want to actually learn from it."**
+→ [`watch-coach.md`](./watch-coach.md). Same four techniques as `learning-coach`, framed for video material — chunk by topic shifts, treat the speaker as a source whose claims need compressing, deltaing, and drilling. Pair with the `transcripts/<date>--<slug>.md` files.
 
 **"I only have 5 minutes."**
 → `triage-coach` or skim the output of `plan-qa-explainer`. Skip every drilling coach; they need time.

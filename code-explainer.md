@@ -76,6 +76,13 @@ Produce three short lists:
 2. Trusting, not understanding — parts where I took your word for it and would need to dig deeper before changing
 3. Flagged — specific lines or blocks that look risky, unclear, or wrong
 
+Then produce a second deliverable: a dense, structured Markdown synthesis of the explanation that is clean enough to save as a standalone note under `explainer-scratchpad/`.
+- Keep it concise but complete.
+- Preserve the same high-level flow: orient → walk → decisions → risks.
+- Write it for a reader who did not author the code.
+- Include the exact files / commits / modules covered.
+- Make it useful as a future reference, not just a live chat response.
+
 Ask me if I want to go deeper on anything in list 2 or 3.
 
 Begin with question 1 to me.
@@ -85,4 +92,5 @@ Begin with question 1 to me.
 
 - **Phase separation matters most here.** Agents (and humans) tend to explain code line-by-line — the worst possible format. Forcing orientation → mechanics → decisions → risks gives a navigable mental model. If collapsing phases for speed, collapse 3 into 4, never 1 into 2.
 - **The end-list is the real artifact.** Two weeks later, *understood / trusting / flagged* tells me where my understanding is real vs. borrowed. Borrowed parts bite when I try to modify them.
+- **The explainer should end with a saveable artifact.** After the interactive explanation and end-lists, it should emit a polished Markdown synthesis that can be dropped into `explainer-scratchpad/` without cleanup.
 - **Answer to "what do you want from this session?" matters.** *Approve* = high-level + risks. *Maintain* = full walkthrough. *Modify* = walkthrough + extension points + ripple effects. Picking wrong wastes time.
