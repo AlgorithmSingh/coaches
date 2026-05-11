@@ -19,6 +19,7 @@ Source conversation: [`../../daily-journal/2026-04-18/learning-and-review-coach-
 | [`triage-coach.md`](./triage-coach.md) | Just need to cut noise fast. Compression + delta only. |
 | [`feynman-coach.md`](./feynman-coach.md) | Want to find holes in my own understanding. I explain, it finds gaps. |
 | [`socratic-coach.md`](./socratic-coach.md) | Want to understand one concept deeply. It drills via questions. |
+| [`classroom-coach.md`](./classroom-coach.md) | Want the depth of Socratic but as a listener. Model role-plays both professor and a confused-but-earnest student. |
 | [`watch-coach.md`](./watch-coach.md) | Have a video transcript from `watch-agent-system`. Same four techniques as `learning-coach`, framed for video material. |
 
 **Review coaches** are for reviewing agent output before green-lighting it.
@@ -45,6 +46,9 @@ Match the situation to the coach, not the other way around.
 
 **"There's one concept I want to really understand."**
 → [`socratic-coach.md`](./socratic-coach.md). It drills via questions, refuses to accept hedged answers. Slowest. Worth it for the 1–2 concepts that matter, not a dozen.
+
+**"I want Socratic depth but don't want to answer — I'd rather listen."**
+→ [`classroom-coach.md`](./classroom-coach.md). Model plays both professor and student; I overhear the dialogue. Lower retention than `socratic-coach` (answering is what makes it stick), but lets me cover more ground in a sitting. Good for mapping a topic before drilling into a specific angle.
 
 **"My coding agent wrote a plan. Is it even optimizing for the right things?"**
 → [`tradeoff-review-coach.md`](./tradeoff-review-coach.md). Reconstruct the decision tree, surface rejected alternatives, check alignment with my priorities. **Run this before reviewing the steps** — if the agent optimized wrong, reviewing steps is polishing a plan that shouldn't exist.

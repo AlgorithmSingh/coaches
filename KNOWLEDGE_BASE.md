@@ -2,7 +2,7 @@
 
 Snapshot of the current state of the reusable coach-prompt library. Paired with `README.md` and `AGENTS.md`.
 
-**Last verified:** 2026-04-19 (coach library consists of drilling prompts, review prompts, and a source link back to `daily-journal/2026-04-18/learning-and-review-coach-prompts.md`)
+**Last verified:** 2026-05-11 (coach library consists of drilling prompts, review prompts, and a source link back to `daily-journal/2026-04-18/learning-and-review-coach-prompts.md`; `classroom-coach.md` added as a listen-only Socratic variant)
 
 ---
 
@@ -33,6 +33,7 @@ These put the human in the hot seat and probe understanding.
 | `triage-coach.md` | Need fast compression and delta-only signal extraction. |
 | `feynman-coach.md` | Want to expose holes in your explanation. |
 | `socratic-coach.md` | Want to understand one concept deeply through questions. |
+| `classroom-coach.md` | Want Socratic depth as a listener; model plays both professor and student. |
 | `watch-coach.md` | Want the same learning flow but framed for video transcripts. |
 
 ### 3.2 Review coaches
@@ -70,6 +71,7 @@ Important distinction:
 | `learning-coach.md` | Combined learning flow. |
 | `feynman-coach.md` | Gap-finding explanation check. |
 | `socratic-coach.md` | Question-driven deep understanding. |
+| `classroom-coach.md` | Listen-only Socratic variant; model plays both roles in a dialogue. |
 | `tradeoff-review-coach.md` | Decision-level plan review. |
 | `plan-review-coach.md` | Step-level plan review. |
 | `plan-qa-explainer.md` | Q&A plan artifact generator. |
